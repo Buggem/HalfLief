@@ -87,14 +87,14 @@ function draw() {
 	if((x + dx) < 0) {
 		dx = random(mid, mad);
 	}
-	if((x + rx + dx) > width)  {
+	if((x + rx + dx) > window.innerWidth)  {
 		dx = -random(mid, mad);
 	}
 	// Y program
 	if((y + dy) < 0) {
 		dy = random(mid, mad);
 	}
-	if((y + ry + dy) > height) {
+	if((y + ry + dy) > window.innerHeight) {
 		dy = -random(mid, mad);
 	}
 	// Add deltas to positions
