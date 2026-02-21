@@ -75,6 +75,37 @@
               z-index: 11;
             }
 		</style>
+		<script>
+function random(min, max) {
+	return Math.random() * (max - min) + min;
+}
+let x = 0, y = 0, rx = 200, ry = 200;
+let mid = 2, mad = 3;
+let dx = random(mid, mad), dy = random(mid, mad);
+function draw() {
+	// X program
+	if((x + dx) < 0) {
+		dx = random(mid, mad);
+	}
+	if((x + rx + dx) > width)  {
+		dx = -random(mid, mad);
+	}
+	// Y program
+	if((y + dy) < 0) {
+		dy = random(mid, mad);
+	}
+	if((y + ry + dy) > height) {
+		dy = -random(mid, mad);
+	}
+	// Add deltas to positions
+	x += dx;
+	y += dy;
+	// Draw rect
+	document.getElementById("pizza").style.position = "fixed";
+	document.getElementById("pizza").style.left     = `${x}px`;
+	document.getElementById("pizza").style.top      = `${y}px`;
+}
+		</script>
   </head>
   <body>
 	  <div class="maindiv">
@@ -116,5 +147,6 @@
       <div style="right:0;" class="vad"><a href="https://store.steampowered.com/app/130/"><img width=100 height=150 src="https://preview.redd.it/my-collection-is-complete-v0-1bzf66kfmjhe1.png?width=640&crop=smart&auto=webp&s=acb75d234d5a2df92ea32176eae567aa2cad222c"/></a></div>
       <div class="hl3dl"><a href="/game.zip"><img height=100 src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Download-button-%28greek%29-animated.gif"/></a></div>
       <div class="hl3dl2"><a href="https://half-life.com/x"><img height=100 src="/download.png"/></a></div>
+	  <img id="pizza" width=200 height=200 src="/pizza.png" />
   </body>
 </html>
