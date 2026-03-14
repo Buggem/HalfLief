@@ -88,8 +88,8 @@ html:has(.home), body:has(.home) {
   background-image: url(https://i.ytimg.com/);
 }
 .thumby:active {
-  border-top:  none;
-  border-left: none;
+  border-bottom: none;
+  border-right:  none;
   padding: 5px 5px 0 0;
 }
 
