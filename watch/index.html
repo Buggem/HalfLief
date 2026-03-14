@@ -8,11 +8,12 @@
 	<script>
 	  window.onload = () => {
 		let vthing = window.location.href.split("?v=");
+		let body = document.getElementById("body");
+		  
 		if (vthing.length == 2) {
 		  let vidid = vthing[1].split("&")[0];
 		  if(vids.hasOwnProperty(vidid)) {
 			document.getElementsByTagName("title")[0].innerText = `${vids[vidid].title} - HalfTube`;
-			let body = document.getElementById("body");
 			body.children[0].innerText = vids[vidid].title;
 
 			let source = document.createElement("source");
@@ -24,6 +25,22 @@
 			body.children[2].children[1].innerText = numbrr(vids[vidid].votes)    + " votes";
 			body.children[2].children[2].innerText = numbrr(vids[vidid].comments) + " comments";
 		  }
+		} else {
+		  body.setAttribute("class", "home");
+		  body.innerHtml = `        <h1>Videos for humans</h1><br>
+        <p>Sick of AI slop on your FYP?<br>Sick of reels that take control of your subconscious to push you into buying stuff?</p>
+        <p>
+          Well ladies and gentlemen, this website is for you!
+        </p>
+        <p>
+          <b>HalfTube</b> is a parody of a social-media-esque service continuing upon the legacy of older video sharing sites like LiveLeak.
+        </p>
+        <p>
+          You can't like or leave a comment here. Your views don't effect the numbers. Your "for you" page is totally random. You can't even upload videos without <a href="https://github.com/Buggem/HalfLief/compare">opening a pull request!</a>
+        </p>
+        <p>
+          Everything is a pristine copy of a good old video sharing site, without the AI slop and rubbish you have to put up with today from platforms like YouTube and TikTok.
+        </p>`;
 		}
 	  };
 	</script>
