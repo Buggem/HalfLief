@@ -65,9 +65,9 @@
 	<script>
 	  window.vids = {
 		  "sMtckj6gnbg": {
-			  "title":  "Are these the world's cripiest fries? Let's find out.",
+			  "title":  "Are these the world's most crispy fries? Let's find out.",
 			  "source": "/watch/fries_hd.mp4",
-			  "views": 356000,
+			  "views": 561905,
 			  "votes": 35695,
 			  "comments": 564
 		  }
@@ -87,6 +87,7 @@
 		if (vthing.length == 2) {
 		  let vidid = vthing[1].split("&")[0];
 		  if(vids.hasOwnProperty(vidid)) {
+			document.getElementsByTagName("title")[0].innerText = `${vids[vidid].title} - HalfTube`;
 			let body = document.getElementById("body");
 			body.children[0].innerText = vids[vidid].title;
 
@@ -112,7 +113,7 @@
     </div>
     <div id="body">
       <h1>Video title</h1>
-      <video controls style="width: calc(256px*(16/9)); height: 256px;">
+      <video controls width=256>
       </video>
       <p>
         <span class="option">0 views</span>
