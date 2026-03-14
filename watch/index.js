@@ -53,6 +53,15 @@ window.vids = {
     "views": 1997351,
     "votes": 98000,
     "comments": 3326
+  },
+  "7xwySqZa1nw": {
+    "title": "Questionable videos found on Nintendo DS",
+    "author": "23abc",
+    "thumb": "/watch/vlcsnap-2026-03-15-10h12m00s326.png",
+    "source": "/watch/Parents find pornography on Nintendo DS [7xwySqZa1nw].webm",
+    "views": 23712739122,
+    "votes": 123912899,
+    "comments": 648199
   }
 };
 //////////////////////////////////////////////////////////////////////////
