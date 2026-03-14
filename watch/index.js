@@ -19,8 +19,8 @@ window.vids = {
     "comments": 0
   },
   "8KmycgcYhUs": {
-    "title": "big ol' doinks"
-    "author": "placeboing reuploads"
+    "title": "big ol' doinks",
+    "author": "placeboing reuploads",
     "thumb": "https://i.ytimg.com/vi/8KmycgcYhUs/maxresdefault.jpg",
     "source": "/watch/bigoldoinks.mp4",
     "views": 51832,
