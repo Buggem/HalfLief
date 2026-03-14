@@ -2,7 +2,7 @@
 window.vids = {
   "sMtckj6gnbg": {
     "title":  "Are these the world's most crispy fries? Let's find out.",
-    "author": "fryguy"
+    "author": "fryguy",
     "source": "/watch/fries_hd.mp4",
     "views": 561905,
     "votes": 35695,
