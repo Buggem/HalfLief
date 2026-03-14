@@ -58,12 +58,11 @@ html:has(.home), body:has(.home) {
 }
 #body {
   position: relative;
-  top: 60px;
-  left: 20px;
+  top: 40px;
+  padding: 20px;
 }
 .fyp {
   text-align: center;
-  left: 0 !important;
 }
 .videoy {
   display: inline-block;
@@ -81,8 +80,8 @@ html:has(.home), body:has(.home) {
   width: 246px;
   height: 181px;
 
-  border-top:  solid 5px grey;
-  border-left: solid 5px lightgrey;
+  border-bottom: solid 5px grey;
+  border-right:  solid 5px lightgrey;
   
   background-size: cover;
   background-position: center; 
