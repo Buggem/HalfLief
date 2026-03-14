@@ -1,0 +1,55 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>For You - HalfTube</title>
+    <link rel="shortcut icon" href="/watch/logo.png"/>
+    <link rel="stylesheet" href="/watch/index.css"/>
+	<script src="index.js"></script>
+    <script>
+      let nums = 0;
+      window.onload = () => {
+        let thumby;
+        for (let i = 0; i < 6; i++)
+        {
+          thumby = document.getElementById("body").children[1].cloneNode(true);
+          thumby.style.display = "inline-block";
+          ///
+          let vi = parseInt(Math.random()*Object.values(vids).length);
+          thumby.children[0].style.backgroundImage = `url(\"${Object.values(vids)[vi].thumb}\")`;
+          thumby.href = `/watch?v=${Object.keys(vids)[vi]}`;
+          
+          thumby.children[1].children[0].innerText = Object.values(vids)[vi].title;
+          thumby.children[1].children[1].innerText = numbrr(Object.values(vids)[vi].views)    + " views";
+  		  thumby.children[1].children[2].innerText = numbrr(Object.values(vids)[vi].votes)    + " votes";
+          ///
+          document.getElementById("body").appendChild(thumby);
+          if(i % 2 == 1) {
+            document.getElementById("body").appendChild(document.createElement("br"));
+          }
+        }
+
+        document.getElementById("body").children[1].remove()
+
+      };
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <span><a id="title" href="/watch">Hλlf<span>Tube</span></a></span>
+      <span class="option"><a href="/watch">Watch</a></span>
+      <span class="last option"><a href="/watch/foryou">For you</a></span>
+    </div>
+    <div id="body" class="fyp">
+        <h1>For You</h1>
+
+        <a class="videoy" style="display:none;">
+          <span class="thumby"></span>
+          <span>
+            <b style="display:block; height:40px;">Video title</b>
+            <span class="option">0 views</span>
+            <span class="last option">0 votes</span>
+          </span>
+        </div>
+    </div>
+  </body>
+</html>
