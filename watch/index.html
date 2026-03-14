@@ -23,6 +23,7 @@
         border-radius: 5px;
 
         font-size: 30px;
+		font-weight: 600;
 
         color: darkorange;
         text-decoration: none;
@@ -62,16 +63,22 @@
       }
     </style>
 	<script>
+	  window.vids = {
+		  "sMtckj6gnbg": {
+			  "title":  "Are these the world's cripiest fries? Let's find out.",
+			  "source": "/watch/fries_hd.mp4"
+		  }
+	  };
 	  window.onload = () => {
 		let vthing = window.location.href.split("?v=");
 		if (vthing.length == 2) {
 		  let vidid = vthing[1].split("&")[0];
-		  if(vidid == "sMtckj6gnbg") {
+		  if(vids.hasOwnProperty(vidid)) {
 			let body = document.getElementById("body");
-			body.children[0].innerText = "Are these the world's cripiest fries? Let's find out.";
+			body.children[0].innerText = vids[vidid].title;
 
 			let source = document.createElement("source");
-			source.setAttribute("src", "/watch/fries_hd.mp4");
+			source.setAttribute("src", vids[vidid].source);
 			source.setAttribute("type", "video/mp4");
 			body.children[1].appendChild(source);
 			
@@ -93,7 +100,6 @@
     <div id="body">
       <h1>Video title</h1>
       <video controls style="width: calc(256px*(16/9)); height: 256px;">
-        <source src="" type="video/mp4" />
       </video>
       <p>
         <span class="option">0 views</span>
