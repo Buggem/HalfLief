@@ -66,8 +66,21 @@
 	  window.vids = {
 		  "sMtckj6gnbg": {
 			  "title":  "Are these the world's cripiest fries? Let's find out.",
-			  "source": "/watch/fries_hd.mp4"
+			  "source": "/watch/fries_hd.mp4",
+			  "views": 356000,
+			  "votes": 35695,
+			  "comments": 564
 		  }
+	  };
+	  window.numbrr = (no) {
+		if(1000000000   <= no)
+		  return `${parseInt(no/1000000000)}b`;
+        else if(1000000 <= no)
+		  return `${parseInt(no/1000000)}m`;
+		else if(1000    <= no)
+		  return `${parseInt(no/1000)}k`;
+		else
+		  return `${no}`;
 	  };
 	  window.onload = () => {
 		let vthing = window.location.href.split("?v=");
@@ -82,9 +95,9 @@
 			source.setAttribute("type", "video/mp4");
 			body.children[1].appendChild(source);
 			
-			body.children[2].children[0].innerText = "654k views";
-			body.children[2].children[1].innerText = "31k votes";
-			body.children[2].children[2].innerText = "324 comments";
+			body.children[2].children[0].innerText = numbrr(vids[vidid].views)    + " views";
+			body.children[2].children[1].innerText = numbrr(vids[vidid].votes)    + " votes";
+			body.children[2].children[2].innerText = numbrr(vids[vidid].comments) + " comments";
 		  }
 		}
 	  };
