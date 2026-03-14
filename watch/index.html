@@ -68,7 +68,12 @@
 		  if(vidid == "sMtckj6gnbg") {
 			let body = document.getElementById("body");
 			body.children[0].innerText = "Are these the world's cripiest fries? Let's find out.";
-			body.children[1].children[0].setAttribute("src", "/watch/fries_hd");
+
+			let source = document.createElement("source");
+			source.setAttribute("src", "/watch/fries_hd.mp4");
+			source.setAttribute("type", "video/mp4");
+			body.children[1].appendChild(source);
+			
 			body.children[2].children[0].innerText = "654k views";
 			body.children[2].children[1].innerText = "31k votes";
 			body.children[2].children[2].innerText = "324 comments";
