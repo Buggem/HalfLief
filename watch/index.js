@@ -1,3 +1,4 @@
+//////////////////////////////////////////////////////////////////////////
 window.vids = {
   "sMtckj6gnbg": {
     "title":  "Are these the world's most crispy fries? Let's find out.",
@@ -16,6 +17,7 @@ window.vids = {
     "comments": 0
   }
 };
+//////////////////////////////////////////////////////////////////////////
 window.numbrr = (no) => {
   if(1000000000   <= no)
     return `${parseInt(no/1000000000)}b`;
