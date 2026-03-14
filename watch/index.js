@@ -58,9 +58,9 @@ window.vids = {
 //////////////////////////////////////////////////////////////////////////
 window.numbrr = (no) => {
   if(1000000000   <= no)
-    return `${parseInt(no/1000000000)}b`;
+    return `${parseInt(no/100000000)/10}b`;
   else if(1000000 <= no)
-    return `${parseInt(no/1000000)}m`;
+    return `${parseInt(no/100000)/10}m`;
   else if(1000    <= no)
     return `${parseInt(no/1000)}k`;
   else
