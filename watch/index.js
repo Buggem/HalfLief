@@ -26,6 +26,24 @@ window.vids = {
     "views": 51832,
     "votes": 454,
     "comments": 65
+  },
+  "jb3wS8EaZl8": {
+    "title": "I've never played a video game in my life.",
+    "author": "oldNintendo",
+    "thumb": "/watch/vlcsnap-2026-03-14-18h56m33s627.png",
+    "source": "/watch/ds_cut.mp4",
+    "views": 4123,
+    "votes": 143,
+    "comments": 5
+  },
+  "au8Hn0L0k": {
+    "title": "Bro just typing shit",
+    "author": "ukstuff10",
+    "thumb": "/watch/vlcsnap-2026-03-14-18h58m53s030.png",
+    "source": "/watch/brojusttypingshit.mp4",
+    "views": 195401,
+    "votes": 2484,
+    "comments": 356
   }
 };
 //////////////////////////////////////////////////////////////////////////
