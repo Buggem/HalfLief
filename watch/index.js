@@ -6,7 +6,7 @@ window.vids = {
     "views": 561905,
     "votes": 35695,
     "comments": 564
-  }
+  },
   "eP2JnstsOWY": {
     "title": "watch me smoke for 3 seconds",
     "author": "allool",
