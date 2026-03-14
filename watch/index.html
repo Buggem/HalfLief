@@ -54,12 +54,28 @@
         left: var(--dotpoint);
         content: "•";
       }
-      .body {
+      #body {
         position: relative;
         top: 60px;
         left: 20px;
       }
     </style>
+	<script>
+	  window.onload = () => {
+		let vthing = window.location.href.split("?v=");
+		if (vthing.length == 2) {
+		  let vidid = vthing[1].split("&")[0];
+		  if(vidid == "sMtckj6gnbg") {
+			let body = document.getElementById("body");
+			body.children[0].innerText = "Are these the world's cripiest fries? Let's find out.";
+			body.children[1].children[0].setAttribute("src", "/watch/fries_hd");
+			body.children[2].children[0].innerText = "654k views";
+			body.children[2].children[1].innerText = "31k votes";
+			body.children[2].children[2].innerText = "324 comments";
+		  }
+		}
+	  };
+	</script>
   </head>
   <body>
     <div class="header">
@@ -68,15 +84,15 @@
       <span class="option"><a href="/watch/foryou">For you</a></span>
       <span class="last option"><a href="/watch/foryou">Dank meme</a></span>
     </div>
-    <div class="body">
-      <h1>are these the worlds most tasty fries?</h1>
+    <div id="body">
+      <h1>Video title</h1>
       <video controls style="width: calc(256px*(16/9)); height: 256px;">
         <source src="" type="video/mp4" />
       </video>
       <p>
-        <span class="option">214k views</span>
-        <span class="option">36k votes</span>
-        <span class="last option">63 comments</span>
+        <span class="option">0 views</span>
+        <span class="option">0 votes</span>
+        <span class="last option">0 comments</span>
       </p>
     </div>
 
