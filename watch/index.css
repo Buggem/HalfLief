@@ -63,6 +63,7 @@ html:has(.home), body:has(.home) {
 }
 .fyp {
   text-align: center;
+  left: 0;
 }
 .videoy {
   display: inline-block;
