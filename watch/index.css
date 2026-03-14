@@ -5,6 +5,7 @@ html {
   position: fixed;
   left: 0;
   top:  0;
+  z-index: 9999;
   width: 100%;
   padding: 10px;
   
@@ -54,4 +55,35 @@ html {
   position: relative;
   top: 60px;
   left: 20px;
+}
+.fyp {
+  text-align: center;
+}
+.videoy {
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+  text-align: left !important;
+  color: black;
+  text-decoration: none;
+}
+.videoy > span:not(.thumby) {
+  padding: 2px; 
+}
+.thumby {
+  display: inline-block;
+  width: 246px;
+  height: 181px;
+
+  border-top:  solid 5px grey;
+  border-left: solid 5px lightgrey;
+  
+  background-size: cover;
+  background-position: center; 
+  background-image: url(https://i.ytimg.com/);
+}
+.thumby:active {
+  border-top:  none;
+  border-left: none;
+  padding: 5px 5px 0 0;
 }
