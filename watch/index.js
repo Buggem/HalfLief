@@ -44,6 +44,15 @@ window.vids = {
     "views": 195401,
     "votes": 2484,
     "comments": 356
+  },
+  "WiGM7D2wZlI": {
+    "title": "STOP POSTING ABOUT AMONG US",
+    "author": "tiredofseeingit",
+    "thumb": "/watch/vlcsnap-2026-03-14-19h04m58s162.png",
+    "source": "/watch/amogus.webm",
+    "views": 1997351,
+    "votes": 98000,
+    "comments": 3326
   }
 };
 //////////////////////////////////////////////////////////////////////////
