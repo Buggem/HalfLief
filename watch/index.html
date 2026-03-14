@@ -1,0 +1,84 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>HalfTube</title>
+    <style>
+      html {
+        font-family: arial;
+      }
+      .header {
+        position: fixed;
+        left: 0;
+        top:  0;
+        width: 100%;
+        padding: 10px;
+        
+        background: grey;
+        color: white;
+        
+      }
+      #title {
+        padding: 0 5px;
+        border-radius: 5px;
+
+        font-size: 30px;
+
+        color: darkorange;
+        text-decoration: none;
+        
+        background: white;
+      }
+      #title:active {
+        color: darkred;
+      }
+      #title > span {
+        font-weight: 300;
+        color: black;
+      }
+      #title:active > span {
+        font-weight: 300;
+        color: #333333;
+      }
+      .option {
+        --dotpoint: 5px;
+		vertical-align: center;
+        
+        margin: 0 var(--dotpoint);
+      }
+      .option > a {
+        color: lightgray;
+        text-decoration: none;
+      }
+      .option:not(.last)::after {
+        position: relative;
+        left: var(--dotpoint);
+        content: "•";
+      }
+      .body {
+        position: relative;
+        top: 60px;
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <span><a id="title" href="/watch">Hλlf<span>Tube</span></a></span>
+      <span class="option"><a href="/watch">Watch</a></span>
+      <span class="option"><a href="/watch/foryou">For you</a></span>
+      <span class="last option"><a href="/watch/foryou">Dank meme</a></span>
+    </div>
+    <div class="body">
+      <h1>are these the worlds most tasty fries?</h1>
+      <video controls style="width: calc(256px*(16/9)); height: 256px;">
+        <source src="" type="video/mp4" />
+      </video>
+      <p>
+        <span class="option">214k views</span>
+        <span class="option">36k votes</span>
+        <span class="last option">63 comments</span>
+      </p>
+    </div>
+
+  </body>
+</html>
