@@ -1,0 +1,57 @@
+html {
+  font-family: arial;
+}
+.header {
+  position: fixed;
+  left: 0;
+  top:  0;
+  width: 100%;
+  padding: 10px;
+  
+  background: grey;
+  color: white;
+  
+}
+#title {
+  padding: 0 5px;
+  border-radius: 5px;
+
+  font-size: 30px;
+  font-weight: 600;
+
+  color: darkorange;
+  text-decoration: none;
+  
+  background: white;
+}
+#title:active {
+  color: darkred;
+}
+#title > span {
+  font-weight: 300;
+  color: black;
+}
+#title:active > span {
+  font-weight: 300;
+  color: #333333;
+}
+.option {
+  --dotpoint: 5px;
+  vertical-align: center;
+  
+  margin: 0 var(--dotpoint);
+}
+.option > a {
+  color: lightgray;
+  text-decoration: none;
+}
+.option:not(.last)::after {
+  position: relative;
+  left: var(--dotpoint);
+  content: "•";
+}
+#body {
+  position: relative;
+  top: 60px;
+  left: 20px;
+}
